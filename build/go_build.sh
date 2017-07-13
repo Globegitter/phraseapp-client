@@ -19,6 +19,6 @@ function build {
 }
 
 build linux   amd64   phraseapp_linux_amd64
-build linux   386     phraseapp_linux_386
-build darwin  amd64   phraseapp_macosx_amd64
-build windows amd64   phraseapp_windows_amd64.exe
+# build linux   386     phraseapp_linux_386
+# build darwin  amd64   phraseapp_macosx_amd64
+# build windows amd64   phraseapp_windows_amd64.exe
