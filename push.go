@@ -109,7 +109,7 @@ func (source *Source) Push(client *phraseapp.Client, waitForResults bool) error 
 			taskResult := make(chan string, 1)
 			taskErr := make(chan error, 1)
 
-			fmt.Print("Waiting for your file to be processed... ")
+			fmt.Printf("Upload %s suceeded. Waiting for your file to be processed... ", upload.ID)
 			spinner.While(func() {
 				result, err := getUploadResult(client, source.ProjectID, upload)
 				taskResult <- result
